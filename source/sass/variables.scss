@@ -25,7 +25,9 @@ $color-light-slate-grey:            #74819c;
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 $red-to-blue:                       linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
 $red-to-blue-alternative:           linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
-$red-to-blue-conic:                 conic-gradient(from 150.87deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+$red-to-blue-conic:                 conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$red-to-blue-conic-tablet:          conic-gradient(from 150.87deg at 21.03% 36.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$red-to-blue-conic-mobile:          conic-gradient(from 150.87deg at 35.03% 34.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 $blue-to-red-equal:                 linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
 
 // Typography

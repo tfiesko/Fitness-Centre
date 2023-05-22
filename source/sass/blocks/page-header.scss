@@ -1,0 +1,251 @@
+.page-header {
+  padding: 35px 0 51px;
+
+  color: $color-default-white;
+
+  background-image: $red-to-blue-conic;
+
+  @include vp-1199 {
+    padding-top: 40px;
+  }
+
+  @include vp-767 {
+    padding-top: 15px;
+  }
+}
+
+.page-header__content {
+  display: grid;
+  grid-template-areas:
+    "logo picture contacts"
+    "main-content picture contacts";
+  grid-template-columns: auto 1fr 175px;
+  row-gap: 40px;
+  column-gap: 15px;
+
+  @include vp-1199 {
+    grid-template-areas:
+      "logo contacts contacts"
+      "main-content main-content picture";
+    grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr) 3fr;
+    row-gap: 12px;
+    column-gap: 26px;
+  }
+
+  @include vp-767 {
+    grid-template-areas:
+      "logo contacts"
+      "main-content main-content";
+    grid-template-columns: min-content 1fr;
+    column-gap: 10px;
+  }
+}
+
+.page-header__logo {
+  grid-area: logo;
+  display: block;
+  width: 120px;
+  height: 24px;
+  margin-top: 5px;
+
+  @include vp-1199 {
+    width: 82px;
+    height: 17px;
+    margin-top: 2px;
+  }
+
+  @include vp-767 {
+    width: 69px;
+    height: 13px;
+    margin-top: 5px;
+  }
+}
+
+.page-header__contact-tel {
+  grid-area: contacts;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+  @include vp-1199 {
+    justify-content: flex-end;
+  }
+}
+
+.page-header__contact-tel-link {
+  align-self: start;
+  margin-left: 20px;
+  margin-bottom: 10px;
+
+  font-family: $ff-alumni-sans;
+  font-size: 26px;
+  line-height: 21px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+
+  color: $color-default-white;
+
+  @include vp-1199 {
+    font-size: 24px;
+    line-height: 21px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+}
+
+.page-header__main-block {
+  grid-area: main-content;
+  display: grid;
+  grid-template-columns: 130px 255px;
+  grid-template-rows: repeat(3, min-content);
+  column-gap: 15px;
+  grid-template-areas:
+    ". subtitle"
+    "services title"
+    "services button";
+  min-height: 500px;
+
+  text-align: right;
+
+  @include vp-1199 {
+    grid-template-columns: 113px 200px;
+    margin: auto;
+    min-height: 421px;
+  }
+
+  @include vp-767 {
+    grid-template-areas:
+      ". subtitle"
+      "services title"
+      "button button";
+    grid-template-columns: minmax(113px, 1fr) minmax(180px, 1fr);
+    width: 100%;
+    min-height: 379px;
+    column-gap: 0;
+  }
+}
+
+.page-header__img-wrapper {
+  grid-area: picture;
+  margin-left: auto;
+  margin-right: 10px;
+  max-width: 500px;
+  margin-top: 16px;
+
+  @include vp-1199 {
+    margin: 0;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.page-header h1 {
+  grid-area: title;
+  margin-top: 17px;
+  margin-right: 3px;
+  margin-bottom: 47px;
+
+  font-family: $ff-alumni-sans;
+  font-weight: 600;
+  font-size: 92px;
+  line-height: 110px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  -webkit-text-stroke: 2px $color-default-white;
+
+  @include vp-1199 {
+    margin-top: 8px;
+    margin-bottom: 35px;
+
+    font-size: 72px;
+    line-height: 86px;
+    text-transform: none;
+  }
+
+  @include vp-767 {
+    direction: rtl;
+    max-width: 177px;
+    margin: 15px 0 22px;
+  }
+}
+
+.page-header h2 {
+  grid-area: subtitle;
+  margin-top: 55px;
+  margin-right: 54px;
+  margin-bottom: 0;
+
+  font-family: $ff-alumni-sans;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 57px;
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+
+  @include vp-1199 {
+    margin-top: 50px;
+    margin-right: 8px;
+
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  @include vp-767 {
+    max-width: 173px;
+    margin-top: 47px;
+    margin-right: 0;
+
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+.page-header__service-list {
+  grid-area: services;
+  padding: 0;
+  margin: 138px 0 0;
+
+  font-size: 14px;
+  line-height: 21px;
+
+  list-style: none;
+  text-align: right;
+
+  @include vp-1199 {
+    margin-top: 96px;
+  }
+
+  @include vp-767 {
+    margin-top: 92px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.page-header__button {
+  grid-area: button;
+  display: block;
+  width: 234px;
+  margin-bottom: 15px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: 3px;
+  border-width: 4px;
+
+  @include vp-1199 {
+    width: 187px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}

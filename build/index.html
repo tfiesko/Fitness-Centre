@@ -12,12 +12,51 @@
     <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/roboto-condensed-700.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/alumni-sans-600.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/alumni-sans-700.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/alumni-sans-800.woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="page-header">
+        <div class="container">
+          <div class="page-header__content">
+            <a class="page-header__logo logo" href="index.html">
+              <img src="img/svg/logo.svg" width="120px" height="24px" alt="Логотип Supergym.">
+            </a>
+            <div class="page-header__contact-tel">
+              <a class="page-header__contact-tel-link" href="tel:880055555555">
+                8-800-555-55-55
+              </a>
+            </div>
+            <div class="page-header__main-block">
+              <h1>Фитнес центр</h1>
+              <h2>Омск</h2>
+              <ul class="page-header__service-list">
+                <li class="page-header__service-item">
+                  <span>Тренажёрный зал</span>
+                </li>
+                <li class="page-header__service-item">
+                  <span>Групповые занятия</span>
+                </li>
+                <li class="page-header__service-item">
+                  <span>Кардио-зона</span>
+                </li>
+              </ul>
+              <a href="#" class="page-header__button btn">
+                Купить абонимент
+              </a>
+            </div>
+            <div class="page-header__img-wrapper">
+              <picture>
+                <source media="(max-width: 767px)" srcset="none">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero-image-tablet.webp, img/hero-image-tablet@2x.webp 2x">
+                <source media="(max-width: 1199px)" srcset="img/hero-image-tablet.jpg, img/hero-image-tablet@2x.jpg 2x">
+                <source type="image/webp" srcset="img/hero-image.webp, img/hero-image@2x.webp 2x">
+                <img src="img/hero-image.jpg" width="500" height="556" alt="" srcset="img/hero-image@2x.jpg 2x">
+              </picture>
+            </div>
+          </div>
+        </div>
       </header>
       <main>
         <section class="intro">
@@ -34,36 +73,6 @@
         <div class="container"></div>
       </footer>
     </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

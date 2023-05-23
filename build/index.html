@@ -59,13 +59,47 @@
         </div>
       </header>
       <main>
-        <section class="intro">
+        <section class="about-us">
           <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+            <div class="about-us__content">
+              <div class="about-us__description">
+                <h2>Тренажерный зал</h2>
+                <h3>Просторный зал площадью 900&nbsp;кв/м</h3>
+                <p>
+                  Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+                </p>
+                <p>
+                  В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
+                </p>
+              </div>
+              <div class="about-us__illustrations">
+                <div class="about-us__picture-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-photo-mobile.webp, img/gym-photo-mobile@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/gym-photo-mobile.jpg, img/gym-photo-mobile@2x.jpg 2x">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-photo-tablet.webp, img/gym-photo-tablet@2x.webp 2x">
+                    <source media="(max-width: 1199px)" srcset="img/gym-photo-tablet.jpg, img/gym-photo-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/gym-photo.webp, img/gym-photo@2x.webp 2x">
+                    <img width="660" height="401" src="img/gym-photo.jpg" srcset="img/gym-photo@2x.jpg 2x" alt="Тренажерный зал">
+                  </picture>
+                </div>
+                <div class="about-us__video-wrapper" data-video>
+                  <div class="about-us__video">
+                    <div class="about-us__video-content" id="player" data-video-content>
+                    </div>
+                    <button class="about-us__video-button" type="button" data-video-button aria-label="Воспроизвести видео"></button>
+                  </div>
+                  <div class="about-us__cover">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-video-preview-mobile.webp, img/gym-video-preview-mobile@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/gym-video-preview-mobile.jpg, img/gym-video-preview-mobile@2x.jpg 2x">
+                      <source type="image/webp" srcset="img/gym-video-preview.webp, img/gym-video-preview@2x.webp 2x">
+                      <img src="img/gym-video-preview.jpg" width="364" height="228" srcset="img/gym-video-preview@2x.jpg 2x" alt="Обложка видео.">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>

@@ -30,7 +30,11 @@
     pointer-events: none;
   }
 
-  @include hover-focus {
+  &:hover {
     opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.7;
   }
 }

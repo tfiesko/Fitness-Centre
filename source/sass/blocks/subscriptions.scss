@@ -1,0 +1,279 @@
+.subscriptions {
+  padding: 120px 0;
+
+  font-family: $ff-roboto-condensed;
+  color: $color-sapphire;
+
+  background-color: $color-ghost-white;
+
+  &::before {
+    position: absolute;
+    right: -56px;
+    bottom: -150px;
+    content: "";
+
+    display: block;
+    width: 300px;
+    height: 494px;
+
+    background-image: url("../img/barbell.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include retina {
+      background-image: url("../img/barbell@2x.png");
+    }
+  }
+
+  @include vp-1199 {
+    padding: 100px 0;
+
+    &::before {
+      right: 0;
+      bottom: -103px;
+
+      width: 347px;
+      height: 444px;
+    }
+  }
+
+  @include vp-767 {
+    padding: 65px 0;
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.subscriptions__content {
+  text-align: center;
+}
+
+.subscriptions__tabs-content {
+  @include vp-1199 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.subscriptions__controls {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  gap: 46px;
+  flex-wrap: wrap;
+
+  border-bottom: 2px solid $color-grey-transparent;
+
+  @include vp-1199 {
+    gap: 54px;
+    margin-bottom: 44px;
+  }
+
+  @include vp-767 {
+    gap: 45px;
+    margin-bottom: 35px;
+  }
+}
+
+.subscriptions__control {
+  position: relative;
+
+  padding: 10px 0;
+
+  font-size: 20px;
+  line-height: 30px;
+  color: $color-grey-transparent;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &.is-active {
+    color: $color-sapphire;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -2px;
+
+      height: 2px;
+
+      background-color: $color-crimson;
+    }
+  }
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.subscriptions__card-list {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, minmax(290px, 1fr));
+  gap: 40px;
+
+  @include vp-1199 {
+    grid-template-columns: minmax(290px, 442px);
+    max-width: 442px;
+  }
+
+  @include vp-767 {
+    gap: 35px;
+  }
+}
+
+.subscriptions__card-item {
+  min-height: 300px;
+  padding: 30px;
+
+  text-align: center;
+
+  background-color: $color-default-white;
+  border: 7px solid $color-default-white;
+
+  &:hover,
+  &:focus-within {
+    border-image: $red-to-blue-alternative;
+    border-image-slice: 1;
+
+    & .subscriptions__card-button {
+      color: $color-default-white;
+      background-image: $red-to-blue-alternative;
+      outline: none;
+    }
+  }
+}
+
+.subscriptions__card-price {
+  position: relative;
+}
+
+.subscriptions__card-price > span {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+
+  color: $color-whisper;
+  font-size: 100px;
+  line-height: 150px;
+  font-weight: 700;
+
+  opacity: 0.5;
+  transform: translateX(-50%);
+  user-select: none;
+
+  @include vp-767 {
+    font-size: 80px;
+    line-height: 120px;
+  }
+}
+
+
+.subscriptions__card-button {
+  width: 212px;
+  min-height: 68px;
+  display: block;
+  margin: 0 auto 30px;
+
+  color: $color-sapphire;
+  outline: 2px solid $color-sapphire;
+  outline-offset: -4px;
+  background-color: transparent;
+
+  @include vp-767 {
+    margin-bottom: 15px;
+  }
+}
+
+.subscriptions__card-price p {
+  position: relative;
+  z-index: 1;
+
+  margin-bottom: 31px;
+
+  color: $color-egyptian-blue;
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: 700;
+
+  @include vp-1199 {
+    margin-bottom: 32px;
+  }
+
+  @include vp-767 {
+    padding-left: 8px;
+    margin-bottom: 28px;
+
+    font-size: 48px;
+    line-height: 72px;
+  }
+}
+
+.subscriptions__card-item > p {
+  margin-top: 10px;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.subscriptions__card-currency {
+  margin-left: 10px;
+
+  color: $color-sapphire;
+}
+
+.subscriptions h2 {
+  margin-top: 0;
+  margin-bottom: 9px;
+
+  font-family: $ff-alumni-sans;
+  font-size: 54px;
+  line-height: 65px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+
+  @include vp-1199 {
+    padding-right: 12px;
+    margin-bottom: 12px;
+
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.subscriptions h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+
+  font-size: 26px;
+  line-height: 28px;
+
+  @include vp-1199 {
+
+  }
+
+  @include vp-767 {
+    margin-top: 14px;
+
+    font-size: 22px;
+    line-height: 24px;
+  }
+}

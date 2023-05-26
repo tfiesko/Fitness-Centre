@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Tabs
 
@@ -28,7 +28,7 @@
 @import "blocks/about-us.scss";
 @import "blocks/subscriptions.scss";
 @import "blocks/promo-block.scss";
-
+@import "blocks/our-staff.scss";
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg

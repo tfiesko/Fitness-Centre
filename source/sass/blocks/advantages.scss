@@ -88,9 +88,17 @@
     font-size: 71px;
     line-height: 60px;
 
+    background-color: $color-persian-blue;
+    background-image: $red-to-blue;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
     & span {
       font-size: 14px;
       line-height: 21px;
+      color: $color-persian-blue;
+
+      -webkit-text-fill-color: $color-persian-blue;
     }
   }
 
@@ -167,9 +175,10 @@
       margin: 0 auto;
 
       & h3,
-      span,
       p {
         max-width: 227px;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       & h3 {
@@ -198,7 +207,6 @@
 
     & h3,
     h4,
-    span,
     p {
       max-width: 227px;
     }

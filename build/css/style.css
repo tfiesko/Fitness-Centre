@@ -3553,6 +3553,124 @@ button,
   opacity: 0.6;
 }
 
+.reviews {
+  padding: 80px 0 121px;
+  text-align: center;
+}
+
+.reviews h2 {
+  margin-bottom: 37px;
+  font-family: "Alumni-sans", "Arial", sans-serif;
+  font-size: 54px;
+  line-height: 64px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+@media (max-width: 1199px) {
+  .reviews h2 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+}
+
+.reviews__container {
+  position: relative;
+  max-width: 679px;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
+.reviews__content {
+  max-width: 560px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+@media (max-width: 1199px) {
+  .reviews__content {
+    max-width: 566px;
+  }
+}
+
+.reviews__item {
+  max-width: 560px;
+  max-height: 335px;
+  padding: 42px 62px 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 108px 1fr;
+  grid-template-columns: 108px 1fr;
+  text-align: left;
+  color: #ffffff;
+  background-color: #1c3374;
+}
+@media (max-width: 1199px) {
+  .reviews__item {
+    max-width: 566px;
+    padding: 40px 65px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__item {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 25px 40px;
+    text-align: center;
+  }
+}
+
+.reviews__item h3 {
+  margin: 17px 0 15px;
+}
+@media (max-width: 767px) {
+  .reviews__item h3 {
+    -ms-grid-column-align: left;
+        justify-self: left;
+    margin-top: 30px;
+    margin-left: 12px;
+    text-align: left;
+    line-height: 26px;
+  }
+}
+
+.reviews__item p {
+  line-height: 22px;
+}
+.reviews__item p:first-child {
+  margin-top: 0;
+}
+
+.reviews__item-img-wrapper {
+  -ms-grid-row-span: 2;
+  grid-row: span 2;
+  width: 80px;
+  height: 80px;
+  margin-top: 20px;
+  margin-right: 28px;
+}
+@media (max-width: 767px) {
+  .reviews__item-img-wrapper {
+    -ms-grid-row-span: 1;
+    grid-row: span 1;
+    -ms-grid-column-align: right;
+        justify-self: right;
+    width: 68px;
+    height: 68px;
+    margin-right: 5px;
+    margin-bottom: 16px;
+  }
+}
+
+.reviews__item-text-content {
+  max-height: 197px;
+  overflow-y: auto;
+}
+@media (max-width: 767px) {
+  .reviews__item-text-content {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+  }
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {

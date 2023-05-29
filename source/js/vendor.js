@@ -12,3 +12,14 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+const swiperReviews = new Swiper('.swiper-reviews', {
+  // Optional parameters
+  spaceBetween: 30,
+  slidesPerView: 1,
+
+  navigation: {
+    nextEl: '.swiper-reviews-button-next',
+    prevEl: '.swiper-reviews-button-prev',
+  },
+});

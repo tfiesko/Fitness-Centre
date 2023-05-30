@@ -1286,6 +1286,7 @@ html {
   line-height: 24px;
   font-family: "Roboto-condensed", "Arial", sans-serif;
   color: #102654;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -2454,6 +2455,7 @@ button,
 
 .subscriptions__control {
   position: relative;
+  max-width: 105px;
   padding: 10px 0;
   font-size: 20px;
   line-height: 30px;
@@ -2853,7 +2855,7 @@ button,
   }
 }
 
-.promo-block__content time {
+.promo-block__date-and-time p {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: -webkit-min-content -webkit-min-content;
@@ -2863,40 +2865,41 @@ button,
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin: 0;
   margin-bottom: 19px;
   border-top: 1px solid #ffffff;
 }
-.promo-block__content time:last-child {
+.promo-block__date-and-time p:last-child {
   margin-bottom: 0;
 }
 @media (max-width: 1199px) {
-  .promo-block__content time {
+  .promo-block__date-and-time p {
     margin-bottom: 0;
   }
 }
 
-.promo-block__content time span:not(:last-child) {
+.promo-block__date-and-time p span:not(:last-child) {
   margin-right: 7px;
 }
 @media (max-width: 1199px) {
-  .promo-block__content time span:not(:last-child) {
+  .promo-block__date-and-time p span:not(:last-child) {
     margin-right: 4px;
   }
 }
 
-.promo-block__content time span:first-child {
+.promo-block__date-and-time p span:first-child {
   font-size: 40px;
   line-height: 45px;
   font-weight: 700;
 }
 @media (max-width: 1199px) {
-  .promo-block__content time span:first-child {
+  .promo-block__date-and-time p span:first-child {
     font-size: 24px;
     line-height: 33px;
   }
 }
 
-.promo-block__content time span:nth-child(2) {
+.promo-block__date-and-time p span:nth-child(2) {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -2904,7 +2907,7 @@ button,
   line-height: 21px;
 }
 @media (max-width: 1199px) {
-  .promo-block__content time span:nth-child(2) {
+  .promo-block__date-and-time p span:nth-child(2) {
     font-size: 10px;
     line-height: 12px;
   }

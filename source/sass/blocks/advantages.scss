@@ -1,14 +1,25 @@
 .advantages {
-  padding: 100px 0;
+  padding: 95px 0 82px;
+  margin-bottom: 100px;
 
   text-align: center;
 
   background-color: $color-ghost-white;
+
+  @include vp-1199 {
+    padding: 88px 0 91px;
+    margin-bottom: 92px;
+  }
+
+  @include vp-767 {
+    padding: 61px 0 26px;
+    margin-bottom: 65px;
+  }
 }
 
 .advantages h2 {
   padding-left: 8px;
-  margin: 0;
+  margin: 3px 0 0;
 
   font-family: $ff-alumni-sans;
   font-size: 54px;

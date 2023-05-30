@@ -1,7 +1,33 @@
 .reviews {
-  padding: 80px 0 121px;
+  padding: 74px 0 121px;
 
   text-align: center;
+
+  @include vp-1199 {
+    padding: 27px 0 102px;
+  }
+
+  @include vp-767 {
+    padding: 8px 0 72px;
+  }
+}
+
+.reviews button {
+  @include vp-767 {
+    min-width: 30px;
+
+    &::after {
+      font-size: 20px;
+    }
+
+    &:first-of-type {
+      left: -10px;
+    }
+
+    &:last-of-type {
+      right: -10px;
+    }
+  }
 }
 
 .reviews h2 {
@@ -14,8 +40,15 @@
   letter-spacing: 0.03em;
 
   @include vp-1199 {
+    margin-bottom: 41px;
+
     font-size: 42px;
     line-height: 50px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
   }
 }
 

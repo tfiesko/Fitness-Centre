@@ -2,6 +2,30 @@
 
 }
 
+.promotions h2 {
+  margin: 32px 0;
+
+  font-family: $ff-alumni-sans;
+  font-size: 54px;
+  line-height: 68px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  @include vp-1199 {
+    padding-right: 10px;
+    margin-bottom: 40px;
+
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
 .promotions__content {
   display: flex;
 
@@ -49,6 +73,10 @@
   & span {
     font-size: 70px;
     line-height: 60px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 10px;
   }
 }
 

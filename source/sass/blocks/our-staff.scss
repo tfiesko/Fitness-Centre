@@ -2,6 +2,15 @@
   position: relative;
 
   padding: 1px 0 120px;
+  margin-bottom: 18px;
+
+  @include vp-1199 {
+    padding-bottom: 82px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 51px;
+  }
 }
 
 .our-staff button {

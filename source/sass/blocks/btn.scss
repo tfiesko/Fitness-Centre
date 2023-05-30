@@ -22,6 +22,14 @@
 
   &--red {
     background-color: $color-torch-red;
+
+    &:hover {
+      border-color: $color-egyptian-blue;
+    }
+
+    &:active {
+      background-color: darken($color-torch-red, 20%);
+    }
   }
 
   &:disabled {

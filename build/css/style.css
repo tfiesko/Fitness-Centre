@@ -1516,6 +1516,12 @@ button,
 .btn--red {
   background-color: #ed0233;
 }
+.btn--red:hover {
+  border-color: #103aae;
+}
+.btn--red:active {
+  background-color: #88011d;
+}
 .btn:disabled {
   opacity: 0.5;
   pointer-events: none;
@@ -1774,6 +1780,13 @@ button,
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+.page-header__contact-tel-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+.page-header__contact-tel-link:active {
+  opacity: 0.6;
+}
 @media (max-width: 1199px) {
   .page-header__contact-tel-link {
     font-size: 24px;
@@ -2014,6 +2027,14 @@ button,
     -ms-grid-column-span: 3;
   }
 }
+.page-header__button:hover {
+  color: #ed0233;
+  border-color: #1c3374;
+}
+.page-header__button:active {
+  color: #fd3e66;
+  border-color: #fd3e66;
+}
 @media (max-width: 1199px) {
   .page-header__button {
     width: 187px;
@@ -2029,6 +2050,12 @@ button,
   display: block;
   width: 120px;
   height: 24px;
+}
+.logo:hover {
+  opacity: 0.8;
+}
+.logo:active {
+  opacity: 0.6;
 }
 .logo--footer {
   width: 88px;
@@ -3078,6 +3105,7 @@ button,
 }
 
 .advantages__list {
+  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 340px 1fr 340px;
@@ -3089,12 +3117,30 @@ button,
   max-width: 1020px;
   margin: 0 auto;
 }
+.advantages__list::before, .advantages__list::after {
+  position: absolute;
+  top: 50%;
+  left: -9px;
+  content: "";
+  display: block;
+  width: 340px;
+  height: 2px;
+  background-color: #d10a42;
+  opacity: 0.2;
+}
+.advantages__list::after {
+  left: auto;
+  right: -9px;
+}
 @media (max-width: 1199px) {
   .advantages__list {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-auto-flow: dense;
     row-gap: 40px;
+  }
+  .advantages__list::before, .advantages__list::after {
+    content: none;
   }
 }
 @media (max-width: 767px) {
@@ -3842,37 +3888,47 @@ button,
   }
 }
 
-.contacts__form label {
-  position: relative;
-  max-width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 14px;
-  line-height: 15px;
-}
-.contacts__form label::before {
-  position: absolute;
-  bottom: 0;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: #74819c;
-}
-
 .contacts__form input {
   margin-left: 5px;
   width: 100%;
   font-family: inherit;
   font-size: inherit;
   line-height: 30px;
-  color: inherit;
+  color: #000000;
   background-color: transparent;
   border: none;
+  border-bottom: 1px solid #74819c;
+}
+.contacts__form input::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.contacts__form input::-moz-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.contacts__form input:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.contacts__form input::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.contacts__form input::placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.contacts__form input:hover {
+  background-color: #18397f;
+}
+.contacts__form input:active {
+  background-color: #1c4394;
 }
 
 .contacts__form-input-wrapper {
@@ -3891,6 +3947,12 @@ button,
   text-align: center;
   background-color: transparent;
   border-width: 3px;
+}
+.contacts__form-button:hover {
+  background-color: #091632;
+}
+.contacts__form-button:active {
+  background-color: #0d1e43;
 }
 @media (max-width: 767px) {
   .contacts__form-button {
@@ -3980,6 +4042,12 @@ button,
   font-size: 14px;
   line-height: 21px;
   color: #102654;
+}
+.contacts__link:hover {
+  opacity: 0.8;
+}
+.contacts__link:active {
+  opacity: 0.6;
 }
 @media (max-width: 1199px) {
   .contacts__link {
@@ -4133,6 +4201,12 @@ button,
   line-height: 16px;
   color: #ffffff;
 }
+.page-footer__nav-link:hover {
+  opacity: 0.7;
+}
+.page-footer__nav-link:active {
+  opacity: 0.5;
+}
 @media (max-width: 767px) {
   .page-footer__nav-link {
     font-size: 16px;
@@ -4159,6 +4233,20 @@ button,
   height: 25px;
   background-color: #ffffff;
   border-radius: 50%;
+}
+.social__link:hover {
+  background-color: #d10a42;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  transition: -webkit-transform 0.1s linear;
+  -o-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  transition: transform 0.1s linear, -webkit-transform 0.1s linear;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.social__link:active {
+  opacity: 0.6;
 }
 
 .social__link * {

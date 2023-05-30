@@ -257,7 +257,7 @@
                     </div>
                     <p>Ежегодные соревнования по CrossFit</p>
                   </div>
-                  <a class="promo-block__main-content-button btn" href="#">Заполнить заявку</a>
+                  <a class="promo-block__main-content-button btn btn--red" href="#">Заполнить заявку</a>
                 </div>
               </div>
               <div class="promo-block__img-wrapper">
@@ -613,18 +613,14 @@
             <section class="contacts__form-content">
               <h2>Бесплатное занятие</h2>
               <form class="contacts__form" method="post" action="https://echo.htmlacademy.ru/" autocomplete="off">
-                  <label>
-                    <span>Имя</span>
-                    <div class="contacts__form-input-wrapper">
-                      <input type="text" name="user-name" required>
-                    </div>
-                  </label>
-                  <label>
-                    <span>Телефон</span>
-                    <div class="contacts__form-input-wrapper">
-                      <input type="tel" name="user-phone" required>
-                    </div>
-                  </label>
+                <label class="visually-hidden" for="user-name">Имя</label>
+                <div class="contacts__form-input-wrapper">
+                  <input type="text" name="user-name" id="user-name" placeholder="Имя" required>
+                </div>
+                <label class="visually-hidden" for="user-phone">Телефон</label>
+                <div class="contacts__form-input-wrapper">
+                  <input type="tel" name="user-phone" id="user-phone" placeholder="Телефон" required>
+                </div>
                 <button class="contacts__form-button btn" type="submit">Отправить</button>
               </form>
             </section>

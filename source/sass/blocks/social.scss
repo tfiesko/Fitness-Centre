@@ -15,6 +15,16 @@
 
   background-color: $color-default-white;
   border-radius: 50%;
+
+  &:hover {
+    background-color: $color-crimson;
+    transition: transform 0.1s linear;
+    transform: scale(1.1);
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .social__link * {

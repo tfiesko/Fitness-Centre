@@ -1481,6 +1481,9 @@ button,
   .container {
     padding: 0 45px;
   }
+  .container--footer {
+    padding-right: 39px;
+  }
 }
 @media (max-width: 767px) {
   .container {
@@ -1724,22 +1727,15 @@ button,
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: logo;
-  display: block;
-  width: 120px;
-  height: 24px;
   margin-top: 5px;
 }
 @media (max-width: 1199px) {
   .page-header__logo {
-    width: 82px;
-    height: 17px;
     margin-top: 2px;
   }
 }
 @media (max-width: 767px) {
   .page-header__logo {
-    width: 69px;
-    height: 13px;
     margin-top: 5px;
   }
 }
@@ -2026,6 +2022,28 @@ button,
 @media (max-width: 767px) {
   .page-header__button {
     width: 100%;
+  }
+}
+
+.logo {
+  display: block;
+  width: 120px;
+  height: 24px;
+}
+.logo--footer {
+  width: 88px;
+  height: 16px;
+}
+@media (max-width: 1199px) {
+  .logo {
+    width: 82px;
+    height: 17px;
+  }
+}
+@media (max-width: 767px) {
+  .logo {
+    width: 69px;
+    height: 13px;
   }
 }
 
@@ -3991,6 +4009,162 @@ button,
     font-size: 32px;
     line-height: 38px;
   }
+}
+
+.page-footer {
+  min-height: 108px;
+  padding: 32px 0;
+  color: #ffffff;
+  background-color: #030a1a;
+}
+@media (max-width: 1199px) {
+  .page-footer {
+    padding: 35px 0;
+  }
+}
+@media (max-width: 767px) {
+  .page-footer {
+    padding: 47px 0 53px;
+  }
+}
+
+.page-footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .page-footer__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.page-footer__logo {
+  margin: 15px 35px 10px 0;
+}
+@media (max-width: 1199px) {
+  .page-footer__logo {
+    margin-top: 9px;
+  }
+}
+@media (max-width: 767px) {
+  .page-footer__logo {
+    position: absolute;
+    margin-top: 5px;
+  }
+}
+
+.page-footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 15px;
+}
+@media (max-width: 1199px) {
+  .page-footer__nav {
+    padding-left: 2px;
+  }
+}
+@media (max-width: 767px) {
+  .page-footer__nav {
+    padding-left: 0;
+    margin-bottom: 15px;
+  }
+}
+
+.page-footer__nav-list {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+}
+@media (max-width: 767px) {
+  .page-footer__nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .page-footer__nav-list:first-child {
+    margin-top: 40px;
+    margin-right: 76px;
+  }
+}
+
+.page-footer__nav-item {
+  margin: 10px 0;
+  margin-right: 40px;
+  max-width: 100px;
+}
+@media (max-width: 1199px) {
+  .page-footer__nav-item {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .page-footer__nav-item {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+}
+
+.page-footer__nav-link {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  .page-footer__nav-link {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.social {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (25px)[3];
+  grid-template-columns: repeat(3, 25px);
+  gap: 11px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.social__link * {
+  max-width: 15px;
+  max-height: 15px;
+  margin: auto;
 }
 
 /* @mixin hover-focus {

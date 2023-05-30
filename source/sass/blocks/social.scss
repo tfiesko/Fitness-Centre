@@ -1,0 +1,24 @@
+.social {
+  display: grid;
+  grid-template-columns: repeat(3, 25px);
+  gap: 11px;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.social__link {
+  display: flex;
+  width: 25px;
+  height: 25px;
+
+  background-color: $color-default-white;
+  border-radius: 50%;
+}
+
+.social__link * {
+  max-width: 15px;
+  max-height: 15px;
+  margin: auto;
+}

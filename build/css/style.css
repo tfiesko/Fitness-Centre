@@ -1534,145 +1534,6 @@ button,
   opacity: 0.7;
 }
 
-.custom-input,
-.custom-textarea {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 530px;
-  padding: 14px 0 28px;
-}
-@media screen and (max-width: 767px) {
-  .custom-input,
-.custom-textarea {
-    padding: 4px 0 48px;
-    width: 100%;
-  }
-}
-.custom-input label,
-.custom-textarea label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-}
-@media screen and (max-width: 767px) {
-  .custom-input label,
-.custom-textarea label {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-.custom-input label input,
-.custom-input label textarea,
-.custom-textarea label input,
-.custom-textarea label textarea {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  max-width: 300px;
-  min-height: 48px;
-  margin-left: auto;
-  padding: 10px;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  outline: none;
-  -webkit-transition: border 0.3s ease;
-  -o-transition: border 0.3s ease;
-  transition: border 0.3s ease;
-}
-@media screen and (max-width: 767px) {
-  .custom-input label input,
-.custom-input label textarea,
-.custom-textarea label input,
-.custom-textarea label textarea {
-    max-width: unset;
-    width: 100%;
-  }
-}
-.custom-input label input:hover,
-.custom-input label textarea:hover,
-.custom-textarea label input:hover,
-.custom-textarea label textarea:hover {
-  border: 2px solid rgba(0, 0, 0, 0.5);
-}
-.custom-input label input:focus,
-.custom-input label textarea:focus,
-.custom-textarea label input:focus,
-.custom-textarea label textarea:focus {
-  border: 2px solid rgba(0, 0, 0, 0.8);
-}
-@media screen and (max-width: 767px) {
-  .custom-input__label,
-.custom-textarea__label {
-    margin: 0 0 18px 0;
-  }
-}
-.custom-input__error,
-.custom-textarea__error {
-  position: absolute;
-  right: 0;
-  bottom: 35px;
-  color: #ff1553;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-}
-@media screen and (max-width: 767px) {
-  .custom-input__error,
-.custom-textarea__error {
-    bottom: 20px;
-  }
-}
-.custom-input.is-invalid input,
-.custom-input.is-invalid textarea,
-.custom-textarea.is-invalid input,
-.custom-textarea.is-invalid textarea {
-  border: 2px solid #ff1553;
-}
-.custom-input.is-invalid input:focus, .custom-input.is-invalid input:hover,
-.custom-input.is-invalid textarea:focus,
-.custom-input.is-invalid textarea:hover,
-.custom-textarea.is-invalid input:focus,
-.custom-textarea.is-invalid input:hover,
-.custom-textarea.is-invalid textarea:focus,
-.custom-textarea.is-invalid textarea:hover {
-  border: 2px solid rgba(255, 21, 83, 0.5);
-}
-.custom-input.is-valid input,
-.custom-textarea.is-valid input {
-  border: 2px solid #22b259;
-}
-.custom-input.is-valid input:focus, .custom-input.is-valid input:hover,
-.custom-textarea.is-valid input:focus,
-.custom-textarea.is-valid input:hover {
-  border: 2px solid rgba(34, 178, 89, 0.5);
-}
-.custom-input .input-message,
-.custom-textarea .input-message {
-  position: absolute;
-  right: 0;
-  bottom: -5px;
-}
-.custom-input .input-message.is-invalid,
-.custom-textarea .input-message.is-invalid {
-  color: #ff0000;
-}
-.custom-input .input-message.is-valid,
-.custom-textarea .input-message.is-valid {
-  color: #15ab07;
-}
-
 .page-header {
   padding: 35px 0 51px;
   color: #ffffff;
@@ -2049,6 +1910,8 @@ button,
 
 .logo {
   display: block;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   width: 120px;
   height: 24px;
 }
@@ -2838,7 +2701,7 @@ button,
 .promo-block__content p {
   -ms-grid-column-span: 2;
   grid-column: span 2;
-  margin-top: 8px;
+  margin-top: 2px;
   min-height: 52px;
   font-size: 18px;
   line-height: 27px;
@@ -2866,7 +2729,7 @@ button,
   width: -moz-fit-content;
   width: fit-content;
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 14px;
   border-top: 1px solid #ffffff;
 }
 .promo-block__date-and-time p:last-child {
@@ -4195,6 +4058,10 @@ button,
 }
 
 .contacts__link {
+  display: block;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   font-size: 14px;
   line-height: 21px;
   color: #102654;
@@ -4378,6 +4245,8 @@ button,
   gap: 11px;
   padding: 0;
   margin: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   list-style: none;
 }
 

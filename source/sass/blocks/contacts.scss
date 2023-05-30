@@ -297,6 +297,9 @@
 }
 
 .contacts__link {
+  display: block;
+  max-width: fit-content;
+
   font-size: 14px;
   line-height: 21px;
 

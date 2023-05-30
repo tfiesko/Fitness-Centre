@@ -2863,6 +2863,7 @@ button,
   width: calc(25% - 30px);
   margin-right: 40px;
   color: #ffffff;
+  background-color: #1c3374;
 }
 .our-staff__card:hover .our-staff__card-content-wrapper {
   display: -ms-grid;
@@ -3326,6 +3327,7 @@ button,
   -ms-grid-row-align: start;
       align-self: start;
   max-width: 560px;
+  min-height: 320px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;

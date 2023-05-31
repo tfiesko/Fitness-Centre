@@ -3513,6 +3513,7 @@ button,
   }
   .promotions__small:last-child {
     margin-bottom: 30px;
+    margin-right: 0;
   }
 }
 @media (max-width: 767px) {

@@ -98,7 +98,7 @@
       display: grid;
     }
 
-    .our-staff__card-cover h3 {
+    span {
       display: none;
     }
   }
@@ -206,7 +206,7 @@
   line-height: 27px;
 }
 
-.our-staff__card-cover h3 {
+.our-staff__card-cover span {
   position: absolute;
   bottom: 23px;
 
@@ -214,6 +214,10 @@
   padding: 0 15px;
   margin: 0;
   text-align: center;
+
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
 
   @include vp-1199 {
     margin-right: 7px;

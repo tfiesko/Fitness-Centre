@@ -67,11 +67,6 @@
   font-size: 28px;
   line-height: 43px;
 
-  & span {
-    font-size: 70px;
-    line-height: 60px;
-  }
-
   @include vp-767 {
     margin-bottom: 10px;
   }
@@ -88,6 +83,11 @@
   &:last-of-type {
     margin-bottom: 30px;
   }
+}
+
+.promotions__big span {
+  font-size: 70px;
+  line-height: 60px;
 }
 
 .promotions__big img {

@@ -187,7 +187,7 @@
   }
 }
 
-.promo-block__date-and-time p span:not(:last-child) {
+.promo-block__date-and-time span:not(:last-child) {
   margin-right: 7px;
 
   @include vp-1199 {
@@ -195,7 +195,7 @@
   }
 }
 
-.promo-block__date-and-time p span:first-child {
+.promo-block__date-and-time span:first-child {
   font-size: 40px;
   line-height: 45px;
   font-weight: 700;
@@ -206,7 +206,7 @@
   }
 }
 
-.promo-block__date-and-time p span:nth-child(2) {
+.promo-block__date-and-time span + span {
   align-self: center;
 
   font-size: 14px;

@@ -133,11 +133,11 @@
   }
 }
 
-.contacts__form .is-valid input {
+.contacts__form-input-wrapper.is-valid input {
   border-color: $color-lime-green;
 }
 
-.contacts__form .is-invalid input {
+.contacts__form-input-wrapper.is-invalid input {
   border-color: $color-red;
 }
 

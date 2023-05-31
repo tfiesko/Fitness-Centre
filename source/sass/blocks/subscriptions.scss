@@ -10,21 +10,21 @@
 
   &::before {
     position: absolute;
-    right: -56px;
+    right: 0;
     bottom: -150px;
     content: "";
 
     display: block;
-    width: 300px;
+    width: 290px;
     height: 494px;
 
-    background-image: url("../img/barbell.png");
+    background-image: url("../img/barbell-crop.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
     @include retina {
-      background-image: url("../img/barbell@2x.png");
+      background-image: url("../img/barbell-crop@2x.png");
     }
   }
 
@@ -32,11 +32,16 @@
     padding: 100px 0 97px;
 
     &::before {
-      right: 0;
       bottom: -122px;
 
       width: 347px;
       height: 444px;
+
+      background-image: url("../img/barbell.png");
+
+      @include retina {
+        background-image: url("../img/barbell@2x.png");
+      }
     }
   }
 
@@ -89,7 +94,7 @@
 
   font-size: 20px;
   line-height: 30px;
-  color: $color-grey-transparent;
+  color: fade-out($color-sapphire, 0.5);
 
   border: none;
   background-color: transparent;

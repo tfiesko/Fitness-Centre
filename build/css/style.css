@@ -1490,6 +1490,9 @@ button,
   .container {
     padding: 0 15px;
   }
+  .container--footer {
+    padding: 0;
+  }
 }
 
 .btn {
@@ -3004,7 +3007,7 @@ button,
 }
 @media (max-width: 1199px) {
   .advantages {
-    padding: 88px 0 91px;
+    padding: 88px 0 94px;
     margin-bottom: 92px;
   }
 }
@@ -3028,7 +3031,7 @@ button,
   .advantages h2 {
     padding-right: 20px;
     padding-left: 0;
-    margin-bottom: 31px;
+    margin-bottom: 34px;
     font-size: 42px;
     line-height: 50px;
   }
@@ -3557,6 +3560,8 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -4174,6 +4179,7 @@ button,
 @media (max-width: 767px) {
   .page-footer__content-wrapper {
     display: block;
+    padding-left: 15px;
   }
 }
 

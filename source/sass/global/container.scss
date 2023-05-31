@@ -14,5 +14,9 @@
 
   @include vp-767 {
     padding: 0 15px;
+
+    &--footer {
+      padding: 0;
+    }
   }
 }
